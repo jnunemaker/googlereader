@@ -1,7 +1,7 @@
 module Google
   module Reader    
     class Base < Base
-      class << self
+      class << self        
         def parse(atom_feed)
           Atom::Feed.new(atom_feed)
         end
@@ -21,6 +21,10 @@ module Google
           else
             parse(body).entries
           end
+        end
+        
+        def get_token
+          get(TOKEN_URL)
         end
         
         private

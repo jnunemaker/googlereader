@@ -8,13 +8,13 @@ config = YAML::load(open("#{ENV['HOME']}/.google"))
 Google::Base.establish_connection(config[:email], config[:password])
 # Google::Base.set_connection(Google::Base.new(config[:email], config[:password]))
 
-puts '', '=Labels='
-labels = Google::Reader::Label.all
-pp labels
+# puts '', '=Labels='
+# labels = Google::Reader::Label.all
+# pp labels
 
-# puts '', '==Links=='
-# unread = Google::Reader::Label.new('links').entries(:unread, :n => 5)
-# unread.each { |p| puts p.title }
+puts '', '==Links=='
+unread = Google::Reader::Label.new('links').entries(:unread, :n => 5)
+pp unread.first
 # 
 # puts '', '===Using Continuation==='
 # more_unread = Google::Reader::Label.new('links').entries(:unread, :n => 5, :c => unread.continuation)

@@ -13,11 +13,14 @@ require 'google/base'
 require 'google/reader/base'
 require 'google/reader/count'
 require 'google/reader/label'
+require 'google/reader/search'
 
 module Google
   module Reader
     READER_URL            = Google::URL + "/reader"
     TOKEN_URL             = READER_URL + "/api/0/token"
+    SEARCH_IDS_URL        = READER_URL + "/api/0/search/items/ids"
+    SEARCH_CONTENTS_URL   = READER_URL + "/api/0/stream/items/contents"
     SUBSCRIPTION_LIST_URL = READER_URL + '/api/0/subscription/list'
     SUBSCRIPTION_EDIT_URL = READER_URL + '/api/0/subscription/edit'
     FEED_URL              = READER_URL + '/atom/feed/%s'
