@@ -13,11 +13,12 @@ require 'google/base'
 require 'google/reader/base'
 require 'google/reader/count'
 require 'google/reader/label'
+require 'google/reader/preference'
 require 'google/reader/search'
 
 module Google
   module Reader
-    READER_URL            = Google::URL + "/reader"
+    READER_URL            = Google::URL + '/reader'
     TOKEN_URL             = READER_URL + "/api/0/token"
     SEARCH_IDS_URL        = READER_URL + "/api/0/search/items/ids"
     SEARCH_CONTENTS_URL   = READER_URL + "/api/0/stream/items/contents"
@@ -27,6 +28,7 @@ module Google
     LABELS_URL            = READER_URL + '/api/0/tag/list?output=json'
     LABEL_URL             = READER_URL + '/atom/user/-/label/%s'
     UNREAD_COUNT_URL      = READER_URL + '/api/0/unread-count?all=true&output=json'
+    PREFERENCE_URL        = READER_URL + '/api/0/preference/list?output=json'
     PACKAGE               = "user/-/state/com.google"
     
     module State
