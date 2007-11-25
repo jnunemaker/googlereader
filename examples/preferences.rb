@@ -10,3 +10,5 @@ pp Google::Reader::Preference.available
 pp Google::Reader::Preference[:design]
 pp Google::Reader::Preference[:mobile_use_transcoder]
 pp Google::Reader::Preference[:mobile_num_entries]
+
+pp Google::Reader::Preference.stream
