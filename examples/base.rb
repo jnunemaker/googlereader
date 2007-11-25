@@ -7,3 +7,4 @@ config = YAML::load(open("#{ENV['HOME']}/.google"))
 Google::Base.establish_connection(config[:email], config[:password])
 
 pp Google::Reader::Base.get_token
+pp Google::Reader::Base.user_info

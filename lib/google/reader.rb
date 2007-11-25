@@ -27,9 +27,10 @@ module Google
     FEED_URL              = READER_URL + '/atom/feed/%s'
     LABELS_URL            = READER_URL + '/api/0/tag/list?output=json'
     LABEL_URL             = READER_URL + '/atom/user/-/label/%s'
-    UNREAD_COUNT_URL      = READER_URL + '/api/0/unread-count?all=true&output=json'
     PREFERENCE_URL        = READER_URL + '/api/0/preference/list?output=json'
     PREFERENCE_STREAM_URL = READER_URL + '/api/0/preference/stream/list?output=json'
+    UNREAD_COUNT_URL      = READER_URL + '/api/0/unread-count?all=true&output=json'
+    USER_INFO_URL         = READER_URL + '/user-info'
     PACKAGE               = "user/-/state/com.google"
     
     module State

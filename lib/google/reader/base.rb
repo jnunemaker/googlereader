@@ -23,8 +23,15 @@ module Google
           end
         end
         
+        # Gets a new token which can be used with all non-get requests.
         def get_token
           get(TOKEN_URL)
+        end
+        
+        # Last time I checked this returns a hash like:
+        #   {"isBloggerUser": true, "userId": "<user id number>", "userEmail": "nunemaker@gmail.com"}
+        def user_info
+          parse_json(get(USER_INFO_URL))
         end
         
         private
