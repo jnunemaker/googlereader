@@ -1,5 +1,6 @@
 * 0.0.2
-	- added wrapper for google reader preferences (Preference)
+	- added wrapper for subscriptions
+	- added wrapper for preferences
 	- added Base#get_token for retrieving tokens from google
 * 0.0.1
 	- labels and counts are working

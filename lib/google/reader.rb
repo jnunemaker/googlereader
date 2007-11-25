@@ -5,7 +5,7 @@ require 'rubygems'
 
 gem 'atom', '>= 0.3'
 gem 'json', '>= 1.1.1'
-gem 'googlebase', '>= 0.1.0'
+gem 'googlebase', '>= 0.1.1'
 
 require 'atom'
 require 'json'
