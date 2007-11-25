@@ -1,0 +1,7 @@
+* Feed (ie: Feed.new('http://feeds.feedburner.com/johnnunemaker'))
+* State (ie: State.new('read').entries)
+
+== Edit API
+** Subscription-Edit (add and remove subscriptions)
+** Edit-Tag (mark items as read, starred, shared, etc.)
+** Disable-Tag (no idea what this is)
