@@ -59,8 +59,8 @@ module Google
       def entries(which=nil, o={})
         options = {:n => 15,}.merge(o)
         query_str = valid_keys_to_query_string(o)
-        url = case which
-        when :unread
+        url = case which.to_s
+        when 'unread'
           sprintf(LABEL_URL, @name) + "?xt=#{State::READ}&#{query_str}"
         else
           sprintf(LABEL_URL, @name)
