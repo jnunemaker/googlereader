@@ -1,4 +1,4 @@
-* 0.0.4 Feed (ie: Feed.new('http://feeds.feedburner.com/johnnunemaker'))
+* 0.0.5 Feed (ie: Feed.new('http://feeds.feedburner.com/johnnunemaker'))
 * 0.0.6 State (ie: State.new('read').entries)
 
 == Edit API
