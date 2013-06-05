@@ -1,3 +1,5 @@
+DEAD AND UNMAINTAINED
+
 = Installation
 
 sudo gem install googlereader
